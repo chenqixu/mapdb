@@ -2,7 +2,12 @@ buildscript {
     ext.kotlin_version = '1.2.50'
 
     repositories {
-        mavenCentral()
+        maven {
+            url 'http://maven.aliyun.com/nexus/content/groups/public/'
+        }
+        maven {
+            url 'http://maven.aliyun.com/nexus/content/repositories/jcenter'
+        }
     }
 
     dependencies {
@@ -30,7 +35,12 @@ sourceSets {
 }
 
 repositories {
-    mavenCentral()
+    maven {
+        url 'http://maven.aliyun.com/nexus/content/groups/public/'
+    }
+    maven {
+        url 'http://maven.aliyun.com/nexus/content/repositories/jcenter'
+    }
 }
 
 
